@@ -29,6 +29,7 @@ $(document).ready(function(){
 
             $(".text1").hide();
             $("#stars").hide();
+            $("#stars2").hide();
             $(".text2").show();
             }
         });

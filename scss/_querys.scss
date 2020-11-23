@@ -1,0 +1,50 @@
+@media only screen and (min-width: 320px) {
+    .slider-imagen-1 {
+        padding: 0rem 0rem;
+        img {
+            height: 350px;
+            display: none;
+        }
+
+    .bg-image-2 {
+        background: red;
+        background-size: cover;
+        }
+    }
+
+    .slider-imagen-2 {
+        padding: 0rem 4rem;
+        padding-top: 6rem;
+        align-self: center;
+        img {
+            width: 300px;
+        }
+    }
+
+    .content-5-item{
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .slider-imagen-1 {
+        padding: 0rem 5rem;
+        img {
+            height: 350px;
+            display: block;
+        }
+    }
+    .slider-imagen-2 {
+        padding: 0rem 5rem;
+        padding-top: 6rem;
+        align-self: center;
+        img {
+            width: 300px;
+        }
+    }
+    .bg-image-2 {
+        background-image: url(../images/bgamarillo_desk.png);
+        background-size: cover;
+    }
+}
+

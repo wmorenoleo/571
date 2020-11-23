@@ -11,7 +11,7 @@ body {
     }
 
 .gap-1 {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .master--view {
@@ -32,8 +32,12 @@ body {
 
 .legal-seguros {
     transform: rotate(270deg);
-    position: relative;
-    right: -180px;
+    position: absolute;
+    right: -60px;
+    top: 130px;
+    img{
+        width: 160px;
+    }
 }
 
 .slider-images{
@@ -49,7 +53,7 @@ body {
 }
 
 .slider-background{
-    background-image: url(/src/images/slider.png);
+    background-image: url(../images/slider.png);
     background-size: cover;
     height: 300px;
     z-index: 20;
@@ -81,6 +85,12 @@ body {
     }
 }
 
+.content-1-image{
+    img{
+        width: 150px;
+    }
+}
+
 .video-cnt{
     max-width: 534px;
     width: 100%;
@@ -88,30 +98,41 @@ body {
 }
 
 // Carousel
+
+.image-carousel{
+    img{
+        width: 100px;
+    }
+}
+
+.contetn-3-cnt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .content-3-carousel {
     background-color: $grisClaro;
     border-radius: 1rem;
+    max-width: 650px;
 }
 
 .carousel-control-next, .carousel-control-prev {
     width: 5%;
 }
 
-// .carousel-control-next-icon {
-
-// }
-
-// .carousel-control-next-icon {
-
-// }
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 20px;
-    height: 50px;
-    background: no-repeat 50%/100% 100%;
-    background-color: black;
+.carousel-control-prev-icon {
+    background-image: url(../images/arrowleft.svg);
+    background-size:cover;
+    background-position: center;
 }
+
+.carousel-control-next-icon {
+    background-image: url(../images/arrowright.svg);
+    background-size:cover;
+    background-position: center;
+}
+
 // Carousel
 
 .box-4-badge{
@@ -125,8 +146,26 @@ body {
     border-radius: 10px;
 }
 
+
+.content-5-header{
+    img{
+        width: 140px;
+    }
+}
+
+.item-5-header{
+    img{
+        width: 90px;
+    }
+}
+
 .bg-image-1 {
-    background-image: url(https://via.placeholder.com/250x50/FF0000);
+    background: url(../images/backgroundjelpit.png);
+}
+
+.bg-image-2 {
+    background: url(../images/bgamarillo_xl.png);
+    background-size: cover;
 }
 
 .content-7-inputs{
@@ -160,10 +199,21 @@ body {
     transform: rotate(270deg);
     left: -60px;
     top: 110px;
+    img{
+        width: 160px;
+    }
 }
 
 .footer {
     background-color: $gris;
+    padding: 2rem;
+    p{
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        font-weight: $bold;
+        color: $blanco;
+        text-align: center;
+    }
 }
 
 

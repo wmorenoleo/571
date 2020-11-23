@@ -93,7 +93,7 @@ body {
 }
 
 .gap-1 {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .master--view {
@@ -114,8 +114,12 @@ body {
 
 .legal-seguros {
   transform: rotate(270deg);
-  position: relative;
-  right: -180px;
+  position: absolute;
+  right: -60px;
+  top: 130px;
+}
+.legal-seguros img {
+  width: 160px;
 }
 
 .slider-images {
@@ -131,7 +135,7 @@ body {
 }
 
 .slider-background {
-  background-image: url(/src/images/slider.png);
+  background-image: url(../images/slider.png);
   background-size: cover;
   height: 300px;
   z-index: 20;
@@ -161,27 +165,46 @@ body {
   width: 150px;
 }
 
+.content-1-image img {
+  width: 150px;
+}
+
 .video-cnt {
   max-width: 534px;
   width: 100%;
   height: 350px;
 }
 
+.image-carousel img {
+  width: 100px;
+}
+
+.contetn-3-cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .content-3-carousel {
   background-color: #eaeaea;
   border-radius: 1rem;
+  max-width: 650px;
 }
 
 .carousel-control-next, .carousel-control-prev {
   width: 5%;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  display: inline-block;
-  width: 20px;
-  height: 50px;
-  background: no-repeat 50%/100% 100%;
-  background-color: black;
+.carousel-control-prev-icon {
+  background-image: url(../images/arrowleft.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/arrowright.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .box-4-badge {
@@ -195,8 +218,21 @@ body {
   border-radius: 10px;
 }
 
+.content-5-header img {
+  width: 140px;
+}
+
+.item-5-header img {
+  width: 90px;
+}
+
 .bg-image-1 {
-  background-image: url(https://via.placeholder.com/250x50/FF0000);
+  background: url(../images/backgroundjelpit.png);
+}
+
+.bg-image-2 {
+  background: url(../images/bgamarillo_xl.png);
+  background-size: cover;
 }
 
 .content-7-inputs {
@@ -229,9 +265,20 @@ body {
   left: -60px;
   top: 110px;
 }
+.content-estrellas-vigilado img {
+  width: 160px;
+}
 
 .footer {
   background-color: #5F6060;
+  padding: 2rem;
+}
+.footer p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
 }
 
 .stars {
@@ -255,6 +302,56 @@ body {
 /* El selector de hijo, es necesario para aumentar la especifidad*/
 .stars > a:hover ~ a {
   color: #e0e0e0;
+}
+
+@media only screen and (min-width: 320px) {
+  .slider-imagen-1 {
+    padding: 0rem 0rem;
+  }
+  .slider-imagen-1 img {
+    height: 350px;
+    display: none;
+  }
+  .slider-imagen-1 .bg-image-2 {
+    background: red;
+    background-size: cover;
+  }
+
+  .slider-imagen-2 {
+    padding: 0rem 4rem;
+    padding-top: 6rem;
+    align-self: center;
+  }
+  .slider-imagen-2 img {
+    width: 300px;
+  }
+
+  .content-5-item {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .slider-imagen-1 {
+    padding: 0rem 5rem;
+  }
+  .slider-imagen-1 img {
+    height: 350px;
+    display: block;
+  }
+
+  .slider-imagen-2 {
+    padding: 0rem 5rem;
+    padding-top: 6rem;
+    align-self: center;
+  }
+  .slider-imagen-2 img {
+    width: 300px;
+  }
+
+  .bg-image-2 {
+    background-image: url(../images/bgamarillo_desk.png);
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
