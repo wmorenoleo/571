@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+    }
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    color: $gris;
+    font-weight: $light;
+    font-style: italic;
+    }
+
+.gap-1 {
+    padding: 1rem;
+}
+
+.master--view {
+    background-image: url(../images/bg-general.png);
+}
+
+.header--view {
+    background-color: $blanco;
+}
+
+.slider--view{
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.legal-seguros {
+    transform: rotate(270deg);
+    position: relative;
+    right: -180px;
+}
+
+.slider-images{
+    position: absolute;
+    top: 25px;
+    z-index: 10;
+    width: 100%;
+}
+
+.contenedor-slider{
+    display: flex;
+    justify-content: center;
+}
+
+.slider-background{
+    background-image: url(/src/images/slider.png);
+    background-size: cover;
+    height: 300px;
+    z-index: 20;
+}
+
+.slider-imagen-1 {
+    padding: 0rem 5rem;
+    img{
+        height: 350px;
+    }
+}
+
+.slider-imagen-2 {
+    padding: 0rem 5rem;
+    padding-top: 4rem;
+    align-self: center;
+}
+
+.slider-imagen-2 {
+    img{
+        width: 300px;
+    }
+}
+
+.header-logo {
+    padding: 1rem;
+    img{
+        width: 150px;
+    }
+}
+
+.video-cnt{
+    max-width: 534px;
+    width: 100%;
+    height: 350px;
+}
+
+// Carousel
+.content-3-carousel {
+    background-color: $grisClaro;
+    border-radius: 1rem;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+// .carousel-control-next-icon {
+
+// }
+
+// .carousel-control-next-icon {
+
+// }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 50px;
+    background: no-repeat 50%/100% 100%;
+    background-color: black;
+}
+// Carousel
+
+.box-4-badge{
+    max-width: 480px;
+    border-radius: 20px;
+}
+
+.content-5-item {
+    background-color: $blanco;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.bg-image-1 {
+    background-image: url(https://via.placeholder.com/250x50/FF0000);
+}
+
+.content-7-inputs{
+    max-width: 450px;
+    width: 100%;
+    
+}
+
+.form-control {
+    text-align: center;
+    font-weight: $light;
+    font-size: 20px;
+    font-style: italic;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+.form-control:focus {
+    border-color: $verde;
+}
+
+.content-estrellas {
+    position: relative;
+    padding: 1rem;
+}
+
+
+.content-estrellas-vigilado{
+    position: absolute;
+    transform: rotate(270deg);
+    left: -60px;
+    top: 110px;
+}
+
+.footer {
+    background-color: $gris;
+}
+
+

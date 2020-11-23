@@ -1,0 +1,95 @@
+//-------Colores---------
+$verde: #016d38 !default;
+$amarillo: #FFDC5D !default;
+$cont-amarillo: #716122 !default;
+$gris: #5F6060 !default;
+$grisClaro: #eaeaea !default;
+$blanco: #ffffff !default;
+$morado: #2e0063;
+//---------- Font Weigth ------
+$light: 300 !default;
+$regular: 400 !default;
+$bold: 600 !default;
+
+.bfix {
+    border: 1px solid red;
+}
+// ------- Headers Sizes
+
+.bold {
+    font-weight: $bold;
+}
+
+.light {
+    font-weight: $light;
+}
+
+.regular {
+    font-weight: $regular;
+}
+
+.strong {
+    font-weight: $bold;
+}
+
+.text {
+    font-weight: $light;
+}
+// ------- Colores fuente
+.verde {
+    color: $verde;
+}
+
+.amarillo {
+    color: $amarillo;
+}
+
+.morado {
+    color: $morado;
+}
+
+.gris {
+    color: $gris;
+}
+
+.blanco {
+    color: $blanco;
+}
+
+// ------- Colores Background
+.bg-verde {
+    background-color: $verde;
+}
+
+.bg-amarillo {
+    background-color: $amarillo;
+}
+
+.bg-blanco {
+    background-color: $blanco;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    p { 
+        margin: 0;
+    }
+}
+
+.btn-verde {
+    &:hover {
+        color: $amarillo;
+    }
+    color: #fff;
+    background-color: $verde;
+    border-color: $verde;
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: italic;
+    font-weight: $bold;
+    padding: .5rem 4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
