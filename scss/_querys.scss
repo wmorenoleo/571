@@ -1,24 +1,36 @@
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 750px) {
     .slider-imagen-1 {
-        padding: 0rem 0rem;
+        padding: 0rem 1rem;
         img {
-            height: 350px;
-            display: none;
-        }
-
-    .bg-image-2 {
-        background: red;
-        background-size: cover;
+            height: 351px;
+            position: absolute;
+            z-index: -1;
+            left: 10%;
         }
     }
 
     .slider-imagen-2 {
-        padding: 0rem 4rem;
-        padding-top: 6rem;
-        align-self: center;
+        padding: 0rem 0rem;
+        position: relative;
+        top: 13rem;
+        left: 50px;
         img {
-            width: 300px;
+            width: 150px;
         }
+    }
+
+    .slider-images{
+        position: absolute;
+        top: 106px;
+        z-index: 10;
+        width: 100%;
+    }
+
+    .slider-background{
+        background-image: url(../images/slider.png);
+        background-size: cover;
+        height: 380px;
+        z-index: 20;
     }
 
     .content-5-item{

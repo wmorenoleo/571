@@ -160,7 +160,8 @@ body {
 }
 
 .bg-image-1 {
-    background: url(../images/backgroundjelpit.png);
+    background: url(../images/backgroundjelpit.png) no-repeat center top;
+    background-size:cover;
 }
 
 .bg-image-2 {
