@@ -114,7 +114,9 @@ body {
   transform: rotate(270deg);
   position: absolute;
   right: -60px;
-  top: 130px;
+  top: 160px;
+  z-index: 50;
+  width: 150px;
 }
 .legal-seguros img {
   width: 160px;
@@ -309,7 +311,7 @@ body {
   color: #e0e0e0;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 600px) {
   .contenedor-slider {
     width: 100%;
     display: flex;
@@ -322,10 +324,10 @@ body {
   }
 
   .slider-imagen-2 {
-    padding-top: 5rem;
+    padding-top: 3.5rem;
   }
   .slider-imagen-2 img {
-    height: 150px;
+    height: 200px;
     mix-blend-mode: multiply;
     opacity: 0.85;
   }
@@ -348,6 +350,37 @@ body {
 
   .slider-background {
     background-image: url(../images/background320.png);
+    background-size: cover;
+    height: 300px;
+    z-index: 20;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .slider-imagen-1 img {
+    display: none;
+  }
+
+  .slider-imagen-2 {
+    padding-top: 3.5rem;
+  }
+  .slider-imagen-2 img {
+    height: 200px;
+    mix-blend-mode: multiply;
+    opacity: 0.85;
+  }
+
+  .slider-imagen-3 img {
+    display: none;
+    height: 278px;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  .slider-background {
+    background-image: url(../images/background1200.png);
     background-size: cover;
     height: 300px;
     z-index: 20;

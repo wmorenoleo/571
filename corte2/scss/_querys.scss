@@ -1,4 +1,4 @@
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 600px) {
     .contenedor-slider{
         width: 100%;
         display: flex;
@@ -12,9 +12,9 @@
     }
     
     .slider-imagen-2 {
-        padding-top: 5rem;
+        padding-top: 3.5rem;
         img{
-            height: 150px;
+            height: 200px;
             mix-blend-mode: multiply;
             opacity: .85;
         }
@@ -40,6 +40,43 @@
     
     .slider-background{
         background-image: url(../images/background320.png);
+        background-size: cover;
+        height: 300px;
+        z-index: 20;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .slider-imagen-1 {
+        img{
+            display:none;
+        }
+    }
+    
+    .slider-imagen-2 {
+        padding-top: 3.5rem;
+        img{
+            height: 200px;
+            mix-blend-mode: multiply;
+            opacity: .85;
+        }
+    }
+    
+    .slider-imagen-3 {
+        img{
+            display:none;
+            height: 278px;
+            -webkit-transform: scaleX(-1);
+            -moz-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+    }
+
+    .slider-background{
+        background-image: url(../images/background1200.png);
         background-size: cover;
         height: 300px;
         z-index: 20;

@@ -305,6 +305,12 @@ body {
   color: #e0e0e0;
 }
 
+@media only screen and (max-width: 320px) {
+  .slider-images {
+    top: 10px;
+    height: 350px;
+  }
+}
 @media only screen and (max-width: 750px) {
   .slider-imagen-1 {
     padding: 0rem 1rem;
@@ -314,16 +320,26 @@ body {
     position: absolute;
     z-index: -1;
     left: 10%;
+    display: none;
+  }
+
+  .slider-images {
+    top: 10px;
+    height: 350px;
+    background-image: url(../images/sliderchica.png);
+    background-position: center top;
+    background-size: cover;
   }
 
   .slider-imagen-2 {
     padding: 0rem 0rem;
     position: relative;
-    top: 0.2rem;
+    top: 3rem;
     left: 50px;
   }
   .slider-imagen-2 img {
-    width: 150px;
+    width: 180px;
+    display: none;
   }
 
   .slider-images {
