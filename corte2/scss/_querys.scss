@@ -1,62 +1,47 @@
-@media only screen and (max-width: 750px) {
-    .slider-imagen-1 {
-        padding: 0rem 1rem;
-        img {
-            height: 351px;
-            position: absolute;
-            z-index: -1;
-            left: 10%;
-        }
-    }
-
-    .slider-imagen-2 {
-        padding: 0rem 0rem;
-        position: relative;
-        top: .2rem;
-        left: 50px;
-        img {
-            width: 150px;
-        }
-    }
-
-    .slider-images{
-        position: absolute;
-        top: 106px;
-        z-index: 10;
+@media only screen and (max-width: 350px) {
+    .contenedor-slider{
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .slider-imagen-1 {
+        img{
+            display:none;
+        }
+    }
+    
+    .slider-imagen-2 {
+        padding-top: 5rem;
+        img{
+            height: 150px;
+            mix-blend-mode: multiply;
+            opacity: .85;
+        }
+    }
+    
+    .slider-imagen-3 {
+        img{
+            display:none;
+            height: 278px;
+            -webkit-transform: scaleX(-1);
+            -moz-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
     }
 
+    .content-5-item {
+        background-color: $blanco;
+        height: 350px;
+        border-radius: 10px;
+    }
+    
     .slider-background{
-        background-image: url(../images/slider.png);
+        background-image: url(../images/background320.png);
         background-size: cover;
-        height: 380px;
+        height: 300px;
         z-index: 20;
     }
-
-    .content-5-item{
-        height: 400px;
-    }
 }
-
-@media only screen and (min-width: 850px) {
-    .slider-imagen-1 {
-        padding: 0rem 5rem;
-        img {
-            height: 350px;
-            display: block;
-        }
-    }
-    .slider-imagen-2 {
-        padding: 0rem 5rem;
-        padding-top: 6rem;
-        align-self: center;
-        img {
-            width: 300px;
-        }
-    }
-    .bg-image-2 {
-        background-image: url(../images/bgamarillo_desk.png);
-        background-size: cover;
-    }
-}
-

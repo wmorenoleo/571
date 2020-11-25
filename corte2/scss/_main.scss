@@ -26,8 +26,6 @@ body {
     height: 300px;
     position: absolute;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .legal-seguros {
@@ -42,40 +40,48 @@ body {
 
 .slider-images{
     position: absolute;
-    top: 25px;
     z-index: 10;
     width: 100%;
+    display: flex;
 }
 
 .contenedor-slider{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.slider-imagen-1 {
+    img{
+        height: 500px;
+    }
+}
+
+.slider-imagen-2 {
+    padding-top: 3rem;
+    img{
+        height: 250px;
+        mix-blend-mode: multiply;
+        opacity: .85;
+    }
+}
+
+.slider-imagen-3 {
+    img{
+        height: 500px;
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
 }
 
 .slider-background{
     background-image: url(../images/slider.png);
     background-size: cover;
-    height: 300px;
+    height: 350px;
     z-index: 20;
-}
-
-.slider-imagen-1 {
-    padding: 0rem 5rem;
-    img{
-        height: 350px;
-    }
-}
-
-.slider-imagen-2 {
-    padding: 0rem 5rem;
-    padding-top: 4rem;
-    align-self: center;
-}
-
-.slider-imagen-2 {
-    img{
-        width: 300px;
-    }
 }
 
 .header-logo {
